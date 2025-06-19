@@ -19,51 +19,42 @@
       color: #007acc;
     }
 
-    .pdf-list {
-      margin-top: 2em;
+    ul.pdf-list {
+      list-style-type: none;
+      padding: 0;
     }
 
     .pdf-list li {
-      margin-bottom: 1em;
+      margin: 1em 0;
+      background: #fff;
+      padding: 1em;
+      border: 1px solid #ddd;
+      border-radius: 8px;
     }
 
-    iframe {
-      width: 100%;
-      height: 600px;
-      border: 1px solid #ccc;
-      margin-top: 1em;
+    .pdf-list a {
+      text-decoration: none;
+      color: #007acc;
+      font-weight: bold;
     }
 
-    @media (max-width: 600px) {
-      iframe {
-        height: 400px;
-      }
+    .pdf-list a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>PDF ビューア 一覧</h1>
+  <h1>PDF 一覧（リンクで開く形式）</h1>
 
   <ul class="pdf-list">
     <li>
-      <strong>サンプル1：</strong>
-      <a href="documents/植物の重力屈性まとめ.pdf" target="_blank">リンクで開く</a>
-      <br>
-      <iframe src="documents/sample1.pdf"></iframe>
+      <a href="documents/sample1.pdf" target="_blank">サンプル1のPDFを開く</a>
     </li>
-
     <li>
-      <strong>サンプル2：</strong>
-      <a href="documents/sample2.pdf" target="_blank">リンクで開く</a>
-      <br>
-      <iframe src="documents/sample2.pdf"></iframe>
+      <a href="documents/sample2.pdf" target="_blank">サンプル2のPDFを開く</a>
     </li>
-
     <li>
-      <strong>サンプル3：</strong>
-      <a href="documents/sample3.pdf" target="_blank">リンクで開く</a>
-      <br>
-      <iframe src="documents/sample3.pdf"></iframe>
+      <a href="documents/sample3.pdf" target="_blank">サンプル3のPDFを開く</a>
     </li>
   </ul>
 </body>

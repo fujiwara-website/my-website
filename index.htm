@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PDFビューア一覧</title>
+  <title>カテゴリ別PDF一覧</title>
   <style>
     body {
       font-family: sans-serif;
@@ -19,43 +19,45 @@
       color: #007acc;
     }
 
-    ul.pdf-list {
-      list-style-type: none;
-      padding: 0;
+    h2 {
+      margin-top: 2em;
+      color: #444;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.3em;
     }
 
-    .pdf-list li {
-      margin: 1em 0;
-      background: #fff;
-      padding: 1em;
-      border: 1px solid #ddd;
-      border-radius: 8px;
+    ul {
+      list-style: none;
+      padding-left: 1em;
     }
 
-    .pdf-list a {
-      text-decoration: none;
+    li {
+      margin: 0.5em 0;
+    }
+
+    a {
       color: #007acc;
-      font-weight: bold;
+      text-decoration: none;
     }
 
-    .pdf-list a:hover {
+    a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>PDF 一覧（リンクで開く形式）</h1>
+  <h1>カテゴリ別PDF一覧</h1>
 
-  <ul class="pdf-list">
-    <li>
-      <a href="documents/sample1.pdf" target="_blank">サンプル1のPDFを開く</a>
-    </li>
-    <li>
-      <a href="documents/sample2.pdf" target="_blank">サンプル2のPDFを開く</a>
-    </li>
-    <li>
-      <a href="documents/sample3.pdf" target="_blank">サンプル3のPDFを開く</a>
-    </li>
+  <h2>?? 裁判資料</h2>
+  <ul>
+    <li><a href="documents/court/hanrei1.pdf" target="_blank">判例1.pdf</a></li>
+    <li><a href="documents/court/hanrei2.pdf" target="_blank">判例2.pdf</a></li>
+  </ul>
+
+  <h2>?? ガイド</h2>
+  <ul>
+    <li><a href="documents/guide/howto.pdf" target="_blank">使用方法.pdf</a></li>
+    <li><a href="documents/guide/notice.pdf" target="_blank">注意点.pdf</a></li>
   </ul>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>???±?≫?I</title>
+  <title>小テスト倉庫</title>
   <style>
     body {
       font-family: sans-serif;
@@ -19,14 +19,15 @@
     }
 
     a.button {
-      display: inline-block;
-      margin-top: 2em;
+      display: block;              /* ここを変更：縦並びにする */
+      margin: 1em auto;            /* 上下に余白＆中央揃え */
       padding: 1em 2em;
       background-color: #007acc;
       color: #fff;
       text-decoration: none;
       border-radius: 8px;
       font-size: 1.2em;
+      max-width: 250px;            /* ボタン幅を制限して読みやすく */
     }
 
     a.button:hover {
@@ -37,6 +38,11 @@
 <body>
   <h1>小テスト倉庫</h1>
   <p>下のボタンをクリックして、各ページに進んでください。</p>
-  <a class="button" href="list.html"> 問題・解答を見る</a>
+
+  <a class="button" href="aoto.html">あおとくん</a>
+  <a class="button" href="haruto.html">はるとくん</a>
+  <a class="button" href="kota.html">こうたくん</a>
+  <a class="button" href="jin.html">じんくん</a>
+  <a class="button" href="my.html">藤原くん</a>
 </body>
 </html>

@@ -3,61 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>テストページ</title>
+  <title>PDFビューア一覧</title>
   <style>
-    /* ベーススタイル */
     body {
-      font-family: 'Helvetica', 'Arial', sans-serif;
-      margin: 0;
-      padding: 1.5em;
+      font-family: sans-serif;
+      padding: 1em;
+      max-width: 900px;
+      margin: auto;
       background-color: #f9f9f9;
       color: #333;
-      line-height: 1.6;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
     }
 
     h1 {
-      font-size: 2em;
       text-align: center;
       color: #007acc;
-      margin-bottom: 0.5em;
     }
 
-    p {
-      font-size: 1.1em;
-      text-align: center;
+    .pdf-list {
+      margin-top: 2em;
     }
 
-    /* 画像がレスポンシブ対応できるように */
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 1em auto;
+    .pdf-list li {
+      margin-bottom: 1em;
     }
 
-    /* レスポンシブ対応の余白調整 */
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: 1px solid #ccc;
+      margin-top: 1em;
+    }
+
     @media (max-width: 600px) {
-      body {
-        padding: 1em;
-      }
-
-      h1 {
-        font-size: 1.6em;
-      }
-
-      p {
-        font-size: 1em;
+      iframe {
+        height: 400px;
       }
     }
   </style>
 </head>
 <body>
-  <h1>こんにちは、世界！</h1>
-  <p>日本語がちゃんと表示されますか？</p>
-  <!-- 画像を入れたい場合は以下のように -->
-  <!-- <img src="your-image.jpg" alt="サンプル画像"> -->
+  <h1>PDF ビューア 一覧</h1>
+
+  <ul class="pdf-list">
+    <li>
+      <strong>サンプル1：</strong>
+      <a href="documents/植物の重力屈性まとめ.pdf" target="_blank">リンクで開く</a>
+      <br>
+      <iframe src="documents/sample1.pdf"></iframe>
+    </li>
+
+    <li>
+      <strong>サンプル2：</strong>
+      <a href="documents/sample2.pdf" target="_blank">リンクで開く</a>
+      <br>
+      <iframe src="documents/sample2.pdf"></iframe>
+    </li>
+
+    <li>
+      <strong>サンプル3：</strong>
+      <a href="documents/sample3.pdf" target="_blank">リンクで開く</a>
+      <br>
+      <iframe src="documents/sample3.pdf"></iframe>
+    </li>
+  </ul>
 </body>
 </html>
